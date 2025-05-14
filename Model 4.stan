@@ -124,7 +124,7 @@ model {
 
 generated quantities {
   /* 0.  Extended intercept matrix  */
-  matrix[N_years_total, J_mode - 1] alpha_mode_ext;   // ← add name + “;”
+  matrix[N_years_total, J_mode - 1] alpha_mode_ext;  
 
   /* 1.  Per-person posterior-predictive draws */
   array[N_test] int<lower=1, upper=J_mode>    mode_pred;
